@@ -54,6 +54,19 @@ return [
             'engine' => null,
         ],
 
+        /*
+    |--------------------------------------------------------------------------
+    |Database Connection Memmory 
+    |--------------------------------------------------------------------------
+    |uttilisation de la base de données en mémoire 
+    | 
+    */
+        'testing'=>[
+            'driver'=>'sqlite',
+            'database'=>':memory:',
+            'prefix'=>''
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => env('DB_HOST', '127.0.0.1'),
